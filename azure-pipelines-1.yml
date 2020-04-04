@@ -10,7 +10,7 @@ resources:
 
 variables:
   tag: '$(Build.BuildId)'
-  dockerRegistryServiceConnection: DFerResourceGrp1-conn
+  dockerRegistryServiceConnection: gmdavef-docker-registry-conn
   
 stages:
 - stage: Build
