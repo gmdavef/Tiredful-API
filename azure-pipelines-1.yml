@@ -10,7 +10,8 @@ resources:
 
 variables:
   tag: '$(Build.BuildId)'
-
+  dockerRegistryServiceConnection: DFerResourceGrp1-conn
+  
 stages:
 - stage: Build
   displayName: Build image
