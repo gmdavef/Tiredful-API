@@ -25,7 +25,7 @@ stages:
       displayName: Scan with WAS
       inputs:
         webApplication: '121169592-BodgeIt - IP'
-        scanType: 'DISCOVERY'
+        scanType: 'VULNERABILITY'
         failBySeverity5: true
         sev5: '0'
         failIfWasCouldNotScan: true
