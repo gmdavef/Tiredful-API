@@ -22,15 +22,15 @@ stages:
       vmImage: 'ubuntu-latest'
     steps: 
     - task: QualysWASConnector@1
-  inputs:
-    webApplication: '121169592-BodgeIt - IP'
-    scanType: 'DISCOVERY'
-    failBySeverity5: true
-    sev5: '0'
-    failIfWasCouldNotScan: true
-    dataCheckFrequency: '5'
-    waitTimeforScanResult: '60*24'
-    WasService: 'user-quays-df46'
+      inputs:
+      webApplication: '121169592-BodgeIt - IP'
+      scanType: 'DISCOVERY'
+      failBySeverity5: true
+      sev5: '0'
+      failIfWasCouldNotScan: true
+      dataCheckFrequency: '5'
+      waitTimeforScanResult: '60*24'
+      WasService: 'user-quays-df46'
 #    - task: Docker@2
 #      displayName: Build and push an image to container registry
 #      inputs:
