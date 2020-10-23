@@ -13,11 +13,11 @@ variables:
   dockerRegistryServiceConnection: gmdavef-docker-registry-conn
   
 stages:
-- stage: Build
-  displayName: Build image
-  jobs:  
-  - job: Build
-    displayName: Build
+#- stage: Build
+#  displayName: Build image
+#  jobs:  
+#  - job: Build
+#    displayName: Build
 #    pool:
 #      vmImage: 'ubuntu-latest'
 #    steps:
