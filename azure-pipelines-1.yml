@@ -24,7 +24,7 @@ stages:
     - task: QualysWASConnector@1
       displayName: Scan with WAS
       inputs:
-        webApplication: '121169592-BodgeIt - IP'
+        webApplication: 'Gruyere'
         scanType: 'VULNERABILITY'
         failBySeverity5: true
         sev5: '0'
