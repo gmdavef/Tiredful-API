@@ -26,7 +26,7 @@ stages:
       displayName: Scan with WAS
       inputs:
         webApplication: '195005837-Gruyere'
-        scanType: 'VULNERABILITY'
+        scanType: 'DISCOVERY'
         authenticationRecord: 'Use Default'
         failBySeverity4: true
         sev4: '0'
