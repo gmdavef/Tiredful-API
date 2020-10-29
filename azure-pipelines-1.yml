@@ -1,4 +1,5 @@
 # Docker
+
 # Build a Docker image 
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
@@ -24,14 +25,17 @@ stages:
     - task: QualysWASConnector@1
       displayName: Scan with WAS
       inputs:
-        webApplication: 'Gruyere'
+        webApplication: '195005837-Gruyere'
         scanType: 'VULNERABILITY'
+        authenticationRecord: 'Use Default'
+        failBySeverity4: true
+        sev4: '0'
         failBySeverity5: true
         sev5: '0'
         failIfWasCouldNotScan: true
-        dataCheckFrequency: '5'
+        dataCheckFrequency: '3'
         waitTimeforScanResult: '60*24'
-        WasService: 'user-quays2ng78'
+        WasService: 'user-quays2ng78'    
 #    - task: Docker@2
 #      displayName: Build and push an image to container registry
 #      inputs:
