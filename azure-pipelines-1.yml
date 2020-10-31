@@ -13,7 +13,7 @@
 #  tag: '$(Build.BuildId)'
 #  dockerRegistryServiceConnection: gmdavef-docker-registry-conn
   
-stages:
+#stages:
 #- stage:
 #  displayName: Build image
 #  jobs:  
@@ -21,7 +21,7 @@ stages:
 #    displayName: Build
 #    pool:
 #      vmImage: 'ubuntu-latest'
-    steps: 
+steps: 
 - task: QualysWASConnector@1
   inputs:
     webApplication: '267694489-DF-TiredfulAPI'
