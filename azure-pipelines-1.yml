@@ -10,4 +10,4 @@ steps:
     sev5: '0'
     dataCheckFrequency: '2'
     waitTimeforScanResult: '60*24'
-    WasService: 'user-quays2ng78'
+    WasService: 'qualys-us2-conn'
