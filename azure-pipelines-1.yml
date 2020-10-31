@@ -5,9 +5,14 @@ steps:
   displayName: Scan with WAS
   inputs:
     webApplication: '267694489-DF-TiredfulAPI'
-    scanType: 'DISCOVERY'
+    scanType: 'VULNERABILITY'
+    failBySeverity4: true
+    sev4: '0'
     failBySeverity5: true
     sev5: '0'
-    dataCheckFrequency: '2'
+    failwithAnyQIDs: true
+    qidlist: '150022'
+    failIfWasCouldNotScan: true
+    dataCheckFrequency: '3'
     waitTimeforScanResult: '60*24'
     WasService: 'qualys-us2-conn'
