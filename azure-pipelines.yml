@@ -25,7 +25,7 @@ stages:
       displayName: Build an image
       inputs:
         command: buildAndPush
-        repository: daverepo1
+        repository: dave-repo1
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
