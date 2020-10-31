@@ -14,13 +14,13 @@ variables:
   dockerRegistryServiceConnection: gmdavef-docker-registry-conn
   
 stages:
-- stage: Build
+- stage:
   displayName: Build image
   jobs:  
   - job: Build
     displayName: Build
-    pool:
-      vmImage: 'ubuntu-latest'
+#    pool:
+#      vmImage: 'ubuntu-latest'
     steps: 
     - task: QualysWASConnector@1
       displayName: Scan with WAS
