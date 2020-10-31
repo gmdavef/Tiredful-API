@@ -3,22 +3,22 @@
 # Build a Docker image 
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
-trigger:
-- master
+#trigger:
+#- master
 
-resources:
-- repo: self
+#resources:
+#- repo: self
 
-variables:
-  tag: '$(Build.BuildId)'
-  dockerRegistryServiceConnection: gmdavef-docker-registry-conn
+#variables:
+#  tag: '$(Build.BuildId)'
+#  dockerRegistryServiceConnection: gmdavef-docker-registry-conn
   
 stages:
-- stage:
-  displayName: Build image
-  jobs:  
-  - job: Build
-    displayName: Build
+#- stage:
+#  displayName: Build image
+#  jobs:  
+#  - job: Build
+#    displayName: Build
 #    pool:
 #      vmImage: 'ubuntu-latest'
     steps: 
