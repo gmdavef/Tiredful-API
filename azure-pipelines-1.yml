@@ -1,28 +1,8 @@
-# Docker
+# Kick off a WAS scan 
 
-# Build a Docker image 
-# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
-
-#trigger:
-#- master
-
-#resources:
-#- repo: self
-
-#variables:
-#  tag: '$(Build.BuildId)'
-#  dockerRegistryServiceConnection: gmdavef-docker-registry-conn
-  
-#stages:
-#- stage:
-#  displayName: Build image
-#  jobs:  
-#  - job: Build
-#    displayName: Build
-#    pool:
-#      vmImage: 'ubuntu-latest'
 steps: 
 - task: QualysWASConnector@1
+  displayName: Scan with WAS
   inputs:
     webApplication: '267694489-DF-TiredfulAPI'
     scanType: 'DISCOVERY'
