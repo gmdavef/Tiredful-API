@@ -22,26 +22,12 @@ stages:
 #    pool:
 #      vmImage: 'ubuntu-latest'
     steps: 
-    - task: QualysWASConnector@1
-      displayName: Scan with WAS
-      inputs:
-        webApplication: '195005837-Gruyere'
-        scanType: 'DISCOVERY'
-        authenticationRecord: 'Use Default'
-        failBySeverity4: true
-        sev4: '0'
-        failBySeverity5: true
-        sev5: '0'
-        failIfWasCouldNotScan: true
-        dataCheckFrequency: '3'
-        waitTimeforScanResult: '60*24'
-        WasService: 'user-quays2ng78'    
-#    - task: Docker@2
-#      displayName: Build and push an image to container registry
-#      inputs:
-#        command: buildAndPush
-#        repository: test-may-1
-#        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-#        containerRegistry: $(dockerRegistryServiceConnection)
-#        tags: |
-#          $(tag)
+- task: QualysWASConnector@1
+  inputs:
+    webApplication: '267694489-DF-TiredfulAPI'
+    scanType: 'DISCOVERY'
+    failBySeverity5: true
+    sev5: '0'
+    dataCheckFrequency: '2'
+    waitTimeforScanResult: '60*24'
+    WasService: 'user-quays2ng78'
